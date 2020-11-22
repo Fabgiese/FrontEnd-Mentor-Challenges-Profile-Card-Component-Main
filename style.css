@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desatured-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%)
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--dark-gray);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Section */
+
+#profile-card-component {
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-image: url("./images/bg-pattern-card.svg");
+    background-color: white;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 375px;
+    border: 1px solid #000;
+}
+
+.avatar {
+    display: flex;
+    flex: 1;
+    margin-top: 90px;
+    justify-content: center;
+}
+
+.avatar img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.others-informations {
+    display: flex;
+    flex: 2;
+}
+
+.name-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.name-container div {
+    display: flex;
+}
+
+.name-container h4 {
+    color: var(--very-dark-desatured-blue);
+    margin-bottom: 15px;
+}
+
+.name-container strong {
+    margin-left: 10px;
+}
+
+.information {
+    display: flex;
+    border-top: 1px solid var(--dark-gray);
+    width: 100%;
+    padding: 25px 45px;
+}
+
+.information-inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.information-inner div {
+    margin-bottom: 10px;
+}
